@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Klyro — Landing Pages That Actually Convert</title>
+  <meta name="description" content="Klyro is a solo web agency building high-converting landing pages for startups, creators, and online businesses." />
+
+  <!-- ░░ FAVICON ░░ -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.svg" />
+
+<!-- ░░ OG / SOCIAL META ░░ -->
+<meta property="og:type"         content="website" />
+<meta property="og:url"          content="https://klyrow.netlify.app/" />
+<meta property="og:title"        content="Klyro — Landing Pages That Actually Convert" />
+<meta property="og:description"  content="Klyro builds precision-crafted, high-converting landing pages for startups, creators, and online businesses. Clean code. Real results." />
+<meta property="og:image"        content="https://klyrow.netlify.app/omg-iamge.svg" />
+<meta property="og:image:width"  content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name"    content="Klyro" />
+
+<!-- ░░ TWITTER CARD ░░ -->
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:site"        content="@klyrodesign" />
+<meta name="twitter:creator"     content="@pranavsingh" />
+<meta name="twitter:title"       content="Klyro — Landing Pages That Actually Convert" />
+<meta name="twitter:description" content="Klyro builds precision-crafted, high-converting landing pages for startups, creators, and online businesses." />
+<meta name="twitter:image"       content="https://klyrow.netlify.app/omg-iamge.svg" />
+
+<!-- ░░ EXTRA SEO ░░ -->
+<meta name="author"      content="Pranav Singh" />
+<meta name="robots"      content="index, follow" />
+<link rel="canonical"    href="https://klyrow.netlify.app/" />
+<meta name="theme-color" content="#080808" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ NOISE OVERLAY ░░ -->
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- ░░ CURSOR ░░ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- ════════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#" class="logo">Klyro<span class="logo-dot">.</span></a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn-primary btn-sm nav-cta">Start Project</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ════════════════════════════════════════════
+         HERO
+    ════════════════════════════════════════════ -->
+    <section class="hero" id="home">
+      <!-- glow blobs -->
+      <div class="glow glow-1" aria-hidden="true"></div>
+      <div class="glow glow-2" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Available for new projects
+          </div>
+          <h1 class="hero-headline">
+            Landing Pages<br />
+            That Actually<br />
+            <em>Convert.</em>
+          </h1>
+          <p class="hero-sub">
+            Klyro builds precision-crafted web experiences for startups and creators who refuse to settle for templates. Clean code. Real results.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              Start Your Project
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#work" class="btn btn-ghost btn-lg">View Work</a>
+          </div>
+          <div class="hero-meta">
+            <div class="hero-meta-item">
+              <span class="hero-meta-num" data-target="40">0</span>+
+              <span class="hero-meta-label">Projects Delivered</span>
+            </div>
+            <div class="hero-meta-sep"></div>
+            <div class="hero-meta-item">
+              <span class="hero-meta-num" data-target="98">0</span>%
+              <span class="hero-meta-label">Client Satisfaction</span>
+            </div>
+            <div class="hero-meta-sep"></div>
+            <div class="hero-meta-item">
+              <span class="hero-meta-num" data-target="3">0</span>x
+              <span class="hero-meta-label">Avg. Conversion Lift</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO VISUAL: CSS-drawn UI mockup -->
+        <div class="hero-visual reveal reveal-delay-2">
+          <div class="mockup-window">
+            <div class="mockup-topbar">
+              <div class="mockup-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="mockup-url">klyro.design</div>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-nav"></div>
+              <div class="mockup-hero-area">
+                <div class="mockup-line mockup-line--xl"></div>
+                <div class="mockup-line mockup-line--lg"></div>
+                <div class="mockup-line mockup-line--md"></div>
+                <div class="mockup-btns">
+                  <div class="mockup-btn-primary"></div>
+                  <div class="mockup-btn-ghost"></div>
+                </div>
+              </div>
+              <div class="mockup-cards">
+                <div class="mockup-card mc-1"></div>
+                <div class="mockup-card mc-2"></div>
+                <div class="mockup-card mc-3"></div>
+              </div>
+              <div class="mockup-chart">
+                <div class="chart-bar" style="--h:45%"></div>
+                <div class="chart-bar" style="--h:70%"></div>
+                <div class="chart-bar" style="--h:55%"></div>
+                <div class="chart-bar" style="--h:90%"></div>
+                <div class="chart-bar" style="--h:65%"></div>
+                <div class="chart-bar" style="--h:80%"></div>
+                <div class="chart-bar" style="--h:95%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="mockup-glow" aria-hidden="true"></div>
+
+          <!-- floating badges -->
+          <div class="float-badge float-badge--1">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="#22c55e" stroke-width="1.5"/><path d="M4.5 7l2 2 3-3" stroke="#22c55e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Launched in 7 days
+          </div>
+          <div class="float-badge float-badge--2">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 2v2M7 10v2M2 7h2M10 7h2" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/><circle cx="7" cy="7" r="2.5" stroke="#fff" stroke-width="1.5"/></svg>
+            99 Perf Score
+          </div>
+        </div>
+      </div>
+
+      <!-- scroll indicator -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         TRUST / MARQUEE
+    ════════════════════════════════════════════ -->
+    <section class="trust">
+      <div class="trust-grid container">
+        <div class="trust-card reveal">
+          <div class="trust-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2l1.8 5.4H18l-4.9 3.6 1.8 5.4L10 13l-4.9 3.4 1.8-5.4L2 7.4h6.2L10 2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="trust-label">Fast & Optimised</div>
+          <div class="trust-desc">Sub-second load times, 95+ Lighthouse scores across every build.</div>
+        </div>
+        <div class="trust-card reveal reveal-delay-1">
+          <div class="trust-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="5" width="16" height="11" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M2 8h16" stroke="currentColor" stroke-width="1.4"/></svg>
+          </div>
+          <div class="trust-label">Mobile-First</div>
+          <div class="trust-desc">Every pixel crafted for every screen size, from 375 px up.</div>
+        </div>
+        <div class="trust-card reveal reveal-delay-2">
+          <div class="trust-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="trust-label">Conversion-Focused</div>
+          <div class="trust-desc">Copy, layout, and CTAs engineered to turn visitors into leads.</div>
+        </div>
+        <div class="trust-card reveal reveal-delay-3">
+          <div class="trust-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7 8h6M7 12h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><rect x="3" y="4" width="14" height="13" rx="2" stroke="currentColor" stroke-width="1.4"/></svg>
+          </div>
+          <div class="trust-label">Clean Code</div>
+          <div class="trust-desc">Semantic, maintainable HTML/CSS/JS — no bloated frameworks.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         SERVICES
+    ════════════════════════════════════════════ -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">What I Build</span>
+          <h2 class="section-title">Services Designed<br />to Grow Your Business</h2>
+          <p class="section-sub">Every engagement is bespoke — no templates, no shortcuts, no recycled designs.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="service-title">Landing Pages</h3>
+            <p class="service-desc">High-impact single pages built to capture attention and drive action. Ideal for product launches, campaigns, and lead generation.</p>
+            <ul class="service-list">
+              <li>Conversion-optimised layouts</li>
+              <li>A/B-ready structure</li>
+              <li>Analytics integration</li>
+            </ul>
+            <div class="service-footer">
+              <span class="service-from">From ₹15,000</span>
+              <a href="#contact" class="service-link">Learn more →</a>
+            </div>
+          </div>
+          <div class="service-card service-card--featured reveal reveal-delay-1">
+            <div class="service-badge">Most Popular</div>
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="service-title">Startup Websites</h3>
+            <p class="service-desc">Full multi-page websites that position your startup for growth. Storytelling, social proof, and clear pathways to conversion.</p>
+            <ul class="service-list">
+              <li>Up to 8 custom pages</li>
+              <li>CMS integration</li>
+              <li>SEO-ready structure</li>
+            </ul>
+            <div class="service-footer">
+              <span class="service-from">From ₹35,000</span>
+              <a href="#contact" class="service-link">Learn more →</a>
+            </div>
+          </div>
+          <div class="service-card reveal reveal-delay-2">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M9 18h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="service-title">Responsive Design</h3>
+            <p class="service-desc">Pixel-perfect layouts that look and feel premium on every screen — phones, tablets, laptops, and wide monitors.</p>
+            <ul class="service-list">
+              <li>Mobile-first approach</li>
+              <li>Touch-optimised UX</li>
+              <li>Cross-browser tested</li>
+            </ul>
+            <div class="service-footer">
+              <span class="service-from">Included in all plans</span>
+              <a href="#contact" class="service-link">Learn more →</a>
+            </div>
+          </div>
+          <div class="service-card reveal reveal-delay-3">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 12l4-4 4 4 4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 18l4-4 4 4 4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="service-title">UI/UX Optimisation</h3>
+            <p class="service-desc">Audit and redesign of existing websites. Identify friction, improve flow, and rebuild with conversion science at its core.</p>
+            <ul class="service-list">
+              <li>UX audit report</li>
+              <li>Redesign implementation</li>
+              <li>Performance tuning</li>
+            </ul>
+            <div class="service-footer">
+              <span class="service-from">From ₹20,000</span>
+              <a href="#contact" class="service-link">Learn more →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         PORTFOLIO
+    ════════════════════════════════════════════ -->
+    <section class="portfolio section" id="work">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Selected Work</span>
+          <h2 class="section-title">Projects Built<br />to Perform</h2>
+        </div>
+        <div class="portfolio-grid">
+
+          <div class="portfolio-card reveal">
+            <div class="portfolio-visual pv-1">
+              <div class="pv-mockup">
+                <div class="pv-bar"></div>
+                <div class="pv-content">
+                  <div class="pv-line pv-line--xl"></div>
+                  <div class="pv-line pv-line--lg"></div>
+                  <div class="pv-line pv-line--md"></div>
+                  <div class="pv-cta-row">
+                    <div class="pv-cta"></div>
+                  </div>
+                  <div class="pv-img-placeholder"></div>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <a href="#" class="btn btn-primary btn-sm">View Case Study</a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-tags">
+                <span class="tag">SaaS</span>
+                <span class="tag">Landing Page</span>
+                <span class="tag">Framer</span>
+              </div>
+              <h3 class="portfolio-title">Nexus AI — Product Launch Page</h3>
+              <p class="portfolio-desc">A high-converting waitlist page for a B2B AI tool. 4,200+ sign-ups in the first month.</p>
+            </div>
+          </div>
+
+          <div class="portfolio-card reveal reveal-delay-1">
+            <div class="portfolio-visual pv-2">
+              <div class="pv-mockup">
+                <div class="pv-bar"></div>
+                <div class="pv-content">
+                  <div class="pv-split">
+                    <div class="pv-left">
+                      <div class="pv-line pv-line--lg"></div>
+                      <div class="pv-line pv-line--md"></div>
+                      <div class="pv-cta-row"><div class="pv-cta"></div></div>
+                    </div>
+                    <div class="pv-right pv-dashboard"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <a href="#" class="btn btn-primary btn-sm">View Case Study</a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-tags">
+                <span class="tag">Startup</span>
+                <span class="tag">Multi-page</span>
+                <span class="tag">HTML/CSS</span>
+              </div>
+              <h3 class="portfolio-title">Folio — Creator Platform Website</h3>
+              <p class="portfolio-desc">Full website for a creator monetisation platform. 60% increase in demo requests post-launch.</p>
+            </div>
+          </div>
+
+          <div class="portfolio-card reveal reveal-delay-2">
+            <div class="portfolio-visual pv-3">
+              <div class="pv-mockup">
+                <div class="pv-bar"></div>
+                <div class="pv-content">
+                  <div class="pv-pricing-demo">
+                    <div class="pv-price-card pc-dim"></div>
+                    <div class="pv-price-card pc-bright"></div>
+                    <div class="pv-price-card pc-dim"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <a href="#" class="btn btn-primary btn-sm">View Case Study</a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-tags">
+                <span class="tag">eCommerce</span>
+                <span class="tag">Conversion UI</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <h3 class="portfolio-title">Vault Commerce — Pricing Page Rebuild</h3>
+              <p class="portfolio-desc">Rebuilt pricing page with clearer plans and social proof. Checkout conversion up by 34%.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         WHY KLYRO
+    ════════════════════════════════════════════ -->
+    <section class="why section">
+      <div class="container why-inner">
+        <div class="why-left reveal">
+          <span class="section-tag">Why Klyro</span>
+          <h2 class="section-title">Built Different.<br />By Design.</h2>
+          <p class="section-sub">Most agencies over-charge and under-deliver. Klyro is a solo operation — that means direct communication, faster turnaround, and someone who actually cares about your results.</p>
+          <a href="#contact" class="btn btn-primary btn-lg">Let's Talk</a>
+        </div>
+        <div class="why-right">
+          <div class="why-feature reveal reveal-delay-1">
+            <div class="why-icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2l1.5 4.5H15l-3.8 2.8 1.5 4.5L9 11 5.3 13.8l1.5-4.5L3 6.5h4.5L9 2z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <h4 class="why-title">Luxury aesthetics, startup budget</h4>
+              <p class="why-desc">Premium design that rivals VC-backed companies, priced for founders who ship.</p>
+            </div>
+          </div>
+          <div class="why-feature reveal reveal-delay-2">
+            <div class="why-icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.3"/><path d="M9 5v4l2.5 2.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <h4 class="why-title">7–14 day delivery</h4>
+              <p class="why-desc">From kickoff call to live site in under two weeks. No agency delays, no bloated timelines.</p>
+            </div>
+          </div>
+          <div class="why-feature reveal reveal-delay-3">
+            <div class="why-icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9l4 4 8-8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <h4 class="why-title">You talk to the builder</h4>
+              <p class="why-desc">No account managers, no handoffs. Direct access to Pranav — the person building your site.</p>
+            </div>
+          </div>
+          <div class="why-feature reveal reveal-delay-3">
+            <div class="why-icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.3"/><rect x="10" y="2" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.3"/><rect x="2" y="10" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.3"/><rect x="10" y="10" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.3"/></svg>
+            </div>
+            <div>
+              <h4 class="why-title">Unlimited revisions until perfect</h4>
+              <p class="why-desc">No revision limits until you're completely happy. Your satisfaction is the only deadline.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         PROCESS
+    ════════════════════════════════════════════ -->
+    <section class="process section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">How It Works</span>
+          <h2 class="section-title">From Idea to<br />Live in 4 Steps</h2>
+        </div>
+        <div class="process-steps">
+          <div class="process-step reveal">
+            <div class="step-num">01</div>
+            <div class="step-line" aria-hidden="true"></div>
+            <div class="step-icon">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="9" stroke="currentColor" stroke-width="1.4"/><path d="M7 11h8M11 7v8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="step-title">Discovery</h3>
+            <p class="step-desc">A focused 60-minute call to understand your goals, audience, and brand. I ask the questions most designers skip.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-1">
+            <div class="step-num">02</div>
+            <div class="step-line" aria-hidden="true"></div>
+            <div class="step-icon">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="3" y="3" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M7 8h8M7 12h5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="step-title">Design</h3>
+            <p class="step-desc">High-fidelity mockups in Figma. You see exactly what you're getting before a single line of code is written.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-2">
+            <div class="step-num">03</div>
+            <div class="step-line" aria-hidden="true"></div>
+            <div class="step-icon">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M7 8l-4 3 4 3M15 8l4 3-4 3M12 6l-2 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="step-title">Development</h3>
+            <p class="step-desc">Handcrafted HTML, CSS, and JS (or your preferred stack). Pixel-perfect implementation with performance built-in.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-3">
+            <div class="step-num">04</div>
+            <div class="step-icon">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 3v4M11 15v4M3 11h4M15 11h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><circle cx="11" cy="11" r="3" stroke="currentColor" stroke-width="1.4"/></svg>
+            </div>
+            <h3 class="step-title">Launch</h3>
+            <p class="step-desc">Deployment, domain setup, final QA, and a handoff call. Your site goes live and starts working for you immediately.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         TESTIMONIALS
+    ════════════════════════════════════════════ -->
+    <section class="testimonials section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Kind Words</span>
+          <h2 class="section-title">Founders Who<br />Ship With Klyro</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">"Pranav delivered our landing page in 9 days and it looks better than anything our previous agency charged 5x for. Conversion rate jumped from 2% to 7.4% in the first week."</p>
+            <div class="testi-author">
+              <div class="testi-avatar ta-1">AS</div>
+              <div>
+                <div class="testi-name">Arjun Sharma</div>
+                <div class="testi-role">Founder, Nexus AI</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card testi-card--featured reveal reveal-delay-1">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">"Working with Klyro felt like having a co-founder who also happens to be a world-class designer. The attention to detail is obsessive — in the best way possible. Our investor deck now links to the site as a reference."</p>
+            <div class="testi-author">
+              <div class="testi-avatar ta-2">PM</div>
+              <div>
+                <div class="testi-name">Priya Mehta</div>
+                <div class="testi-role">CEO, Folio</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card reveal reveal-delay-2">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">"We'd been struggling with low checkout conversions for months. Pranav rebuilt our pricing page in a week and our paid conversion went up 34%. Simple ROI, incredible work."</p>
+            <div class="testi-author">
+              <div class="testi-avatar ta-3">RK</div>
+              <div>
+                <div class="testi-name">Rohan Kapoor</div>
+                <div class="testi-role">Co-founder, Vault Commerce</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         PRICING
+    ════════════════════════════════════════════ -->
+    <section class="pricing section" id="pricing">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Pricing</span>
+          <h2 class="section-title">Simple, Transparent<br />Pricing</h2>
+          <p class="section-sub">No hidden fees. No scope creep surprises. Every plan includes unlimited revisions until you're delighted.</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card reveal">
+            <div class="pricing-header">
+              <span class="pricing-tier">Starter</span>
+              <div class="pricing-amount">₹15,000</div>
+              <div class="pricing-cycle">one-time</div>
+            </div>
+            <p class="pricing-desc">Perfect for founders who need a single high-converting landing page, fast.</p>
+            <ul class="pricing-list">
+              <li><span class="check">✓</span> 1 custom landing page</li>
+              <li><span class="check">✓</span> Mobile responsive</li>
+              <li><span class="check">✓</span> Basic animations</li>
+              <li><span class="check">✓</span> Contact form integration</li>
+              <li><span class="check">✓</span> 7-day delivery</li>
+              <li><span class="check">✓</span> Unlimited revisions</li>
+              <li class="dim"><span>✗</span> Multi-page</li>
+              <li class="dim"><span>✗</span> CMS setup</li>
+            </ul>
+            <a href="#contact" class="btn btn-ghost btn-full">Get Started</a>
+          </div>
+          <div class="pricing-card pricing-card--featured reveal reveal-delay-1">
+            <div class="pricing-popular">Most Popular</div>
+            <div class="pricing-header">
+              <span class="pricing-tier">Growth</span>
+              <div class="pricing-amount">₹35,000</div>
+              <div class="pricing-cycle">one-time</div>
+            </div>
+            <p class="pricing-desc">Full startup website. Multi-page, fast, and built to grow with you.</p>
+            <ul class="pricing-list">
+              <li><span class="check">✓</span> Up to 6 custom pages</li>
+              <li><span class="check">✓</span> Mobile responsive</li>
+              <li><span class="check">✓</span> Advanced animations</li>
+              <li><span class="check">✓</span> CMS integration</li>
+              <li><span class="check">✓</span> SEO fundamentals</li>
+              <li><span class="check">✓</span> 14-day delivery</li>
+              <li><span class="check">✓</span> Unlimited revisions</li>
+              <li><span class="check">✓</span> 30-day support</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-full">Get Started</a>
+          </div>
+          <div class="pricing-card reveal reveal-delay-2">
+            <div class="pricing-header">
+              <span class="pricing-tier">Premium</span>
+              <div class="pricing-amount">₹65,000</div>
+              <div class="pricing-cycle">one-time</div>
+            </div>
+            <p class="pricing-desc">Complete brand web presence. Custom everything, from strategy to launch.</p>
+            <ul class="pricing-list">
+              <li><span class="check">✓</span> Unlimited pages</li>
+              <li><span class="check">✓</span> Custom interactions</li>
+              <li><span class="check">✓</span> UX audit included</li>
+              <li><span class="check">✓</span> Full CMS setup</li>
+              <li><span class="check">✓</span> Advanced SEO</li>
+              <li><span class="check">✓</span> Analytics dashboard</li>
+              <li><span class="check">✓</span> Priority delivery</li>
+              <li><span class="check">✓</span> 60-day support</li>
+            </ul>
+            <a href="#contact" class="btn btn-ghost btn-full">Get Started</a>
+          </div>
+        </div>
+        <p class="pricing-note reveal">All prices in INR. International clients welcome — USD/EUR invoicing available.</p>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         FAQ
+    ════════════════════════════════════════════ -->
+    <section class="faq section">
+      <div class="container faq-inner">
+        <div class="section-header reveal">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title">Questions You're<br />Probably Thinking</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">
+              How long does a typical project take?
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-a">
+              <p>Landing pages are typically delivered in 7 days. Multi-page websites take 10–14 days. Complex projects with custom interactions may take up to 21 days. You'll always get a precise timeline before we begin.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal reveal-delay-1">
+            <button class="faq-q" aria-expanded="false">
+              What do you need from me to get started?
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-a">
+              <p>A brief about your business, your target audience, examples of websites you love, and your branding assets (logo, brand colours). I handle everything else — copywriting assistance, layout, development, and deployment.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal reveal-delay-2">
+            <button class="faq-q" aria-expanded="false">
+              Do you work with clients outside India?
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-a">
+              <p>Absolutely. I work with founders and businesses worldwide. Communication happens async over Notion/email, with video calls scheduled across time zones. USD/EUR pricing available for international clients.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal reveal-delay-3">
+            <button class="faq-q" aria-expanded="false">
+              What tech stack do you use?
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-a">
+              <p>I primarily build with semantic HTML, modern CSS, and vanilla JavaScript for maximum performance and maintainability. For more complex projects I use Next.js, Webflow, or Framer — whatever best suits your needs and team's workflow.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">
+              What happens after the site is live?
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-a">
+              <p>All plans include post-launch support (30–60 days depending on plan). During that time I fix bugs, make minor tweaks, and answer questions for free. After that, support is available at a flat monthly retainer.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal reveal-delay-1">
+            <button class="faq-q" aria-expanded="false">
+              What's your payment structure?
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-a">
+              <p>50% upfront to reserve your spot in the calendar, 50% on launch day. For premium projects I can arrange milestone-based payments. I accept UPI, bank transfer, PayPal, and Stripe.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         FINAL CTA
+    ════════════════════════════════════════════ -->
+    <section class="final-cta section" id="contact">
+      <div class="cta-glow" aria-hidden="true"></div>
+      <div class="container final-cta-inner reveal">
+        <span class="section-tag">Let's Build</span>
+        <h2 class="cta-headline">Your Website Should<br />Work Harder.</h2>
+        <p class="cta-sub">Ready to launch something that actually converts? Let's talk about your project — no commitment required.</p>
+        <div class="cta-actions">
+          <a href="mailto:hello@klyro.design" class="btn btn-primary btn-xl">
+            Let's Build Something Clean
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10 4.5l4.5 4.5L10 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <div class="cta-detail">
+          <span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1l1.3 3.9H12L8.9 7l1.3 3.9L7 9 3.8 10.9 5 7 2 4.9h3.7L7 1z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            Slots limited — 2 projects per month
+          </span>
+          <span>·</span>
+          <span>hello@klyro.design</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">Klyro<span class="logo-dot">.</span></div>
+        <p class="footer-tagline">Building the web's most<br />precise landing pages.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="Twitter">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 2.5L9.5 7l4 6.5H11l-2.5-4L5 13.5H3l3.5-5L2.5 2.5H5l2.2 3.5L10.5 2.5H13z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M5 7v4M5 5.5v.5M8 11V8.5c0-1 .5-1.5 1.5-1.5S11 7.5 11 8.5V11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="GitHub">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1.5C4.4 1.5 1.5 4.4 1.5 8c0 2.9 1.9 5.4 4.5 6.3.3.1.4-.1.4-.3v-1.1c-1.8.4-2.2-.9-2.2-.9-.3-.8-.7-1-.7-1-.6-.4 0-.4 0-.4.7 0 1 .7 1 .7.6 1 1.6.7 2 .5.1-.4.2-.7.4-.8-1.5-.2-3-1-3-3.5 0-.7.3-1.3.7-1.8 0-.2-.3-1 .1-2 0 0 .6-.2 1.8.7.5-.1 1.1-.2 1.6-.2.5 0 1.1.1 1.6.2 1.2-.8 1.8-.7 1.8-.7.4 1 .1 1.8.1 2 .4.5.7 1.1.7 1.8 0 2.6-1.5 3.3-3 3.5.2.2.4.6.4 1.2v1.8c0 .2.1.4.4.3C12.6 13.4 14.5 11 14.5 8c0-3.6-2.9-6.5-6.5-6.5z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <div class="footer-col-title">Services</div>
+          <a href="#services" class="footer-link">Landing Pages</a>
+          <a href="#services" class="footer-link">Startup Websites</a>
+          <a href="#services" class="footer-link">Responsive Design</a>
+          <a href="#services" class="footer-link">UI Optimisation</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Company</div>
+          <a href="#work" class="footer-link">Work</a>
+          <a href="#pricing" class="footer-link">Pricing</a>
+          <a href="#" class="footer-link">About</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Contact</div>
+          <a href="mailto:hello@klyro.design" class="footer-link">hello@klyro.design</a>
+          <a href="#" class="footer-link">Book a Call</a>
+          <a href="#" class="footer-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <span>© 2025 Klyro. Built by Pranav Singh.</span>
+      <span>All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
